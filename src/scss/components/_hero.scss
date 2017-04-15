@@ -1,0 +1,126 @@
+// ----------------------------------------------------------------------------
+// Hero
+// ----------------------------------------------------------------------------
+
+.hero {
+  position: relative;
+  width: 100%;
+
+  @include bp(small) {
+    padding-bottom: 0;
+    height: 900px;
+  }
+
+  @include bp(medium) {
+    height: 1000px;
+  }
+
+}
+
+
+.newspaper__image {
+}
+
+.newspaper {
+  padding-top: 80px;
+  padding-bottom: 80px;
+
+  @include bp(small) {
+    padding-bottom: 0;
+    height: 900px;
+  }
+
+  @include bp(medium) {
+    height: 1000px;
+  }
+}
+
+.newspaper--good {
+  display: block;
+  text-align: center;
+  width: 100%;
+  background-color: $brand-yellow;
+}
+
+.newspaper--bad {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  width: 35%;
+  background-color: $brand-dark-brown;
+  box-shadow: 1px -5px 5px 0 rgba(0,0,0,.6);
+}
+
+
+.newspaper__bad-wrapper {
+  text-align: center;
+}
+
+.drag-button--wrapper {
+  position: absolute;
+  // right: 0;
+  // top: 50%;
+  right: 65%;
+  top: 50%;
+  z-index: 9999;
+
+  @include bp(small) {
+    top: 320px;
+  }
+
+  @include bp(medium) {
+    top: 400px;
+  }
+
+}
+
+.drag-button {
+  // position: fixed;
+  width: 50px;
+  height: 50px;
+  transform: translate(50%, -50%);
+  border-radius: 50%;
+  background-color: $brand-orange;
+  margin-left: -50px;
+  cursor: move;
+  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.52);
+}
+
+.drag-button::after {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  content: '\2194';
+  font-size: 28px;
+  color: #ffffff;
+  line-height: 46px;
+}
+
+.tagline {
+  text-align: center;
+  margin-top: -80px;
+  position: relative;
+  color: $brand-blue;
+  font-weight: 600;
+
+  @include bp(small) {
+    margin-top: -190px;
+  }
+
+  @include bp(medium) {
+    margin-top: -190px;
+  }
+}
+
+.tagline__text {
+  text-transform: uppercase;
+  line-height: 1.4;
+  font-size: 16px;
+
+  @include bp(small) {
+    font-size: 24px;
+  }
+
+}

@@ -1,0 +1,69 @@
+// ----------------------------------------------------------------------------
+// Variables
+// ----------------------------------------------------------------------------
+
+
+// Colors
+// -------------------------
+$primary            : #3399ff;
+$white              : #fff;
+$black              : #000;
+
+$brand-yellow       : #ffe000;
+$brand-dark-brown   : #2b2624;
+$brand-light-brown  : #362f2d;
+$brand-orange       : #f1681e;
+$brand-blue         : #05abd4;
+
+// Type
+// -------------------------
+
+$base-font-size     : 16;
+$base-line-height   : 1.5;
+$base-font-color    : $black;
+$scale              : 1.414;
+$leading            : $base-line-height * 1rem;
+$sans-serif         : 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
+$serif              : 'Cambria', 'Georgia', 'serif';
+$base-font-family   : $sans-serif;
+$header-font-family : 'nimbus-sans-extended', $sans-serif;
+$base-bold-weight   : 600;
+$base-link-color    : $primary;
+$base-link-hover    : darken($primary, 10%);
+
+
+// Breakpoints
+// -------------------------
+
+$breakpoints: (
+  xsmall:     450px,
+  small:      750px,
+  medium:     950px,
+  large:      950px,
+);
+
+
+// Defaults
+// -------------------------
+
+$spacing            : $leading;
+$base-radius        : 2px;
+$base-time          : .3s;
+$base-ease          : ease;
+
+
+// Style
+// -------------------------
+$body-bg            : $white;
+
+
+// Z-indeex
+// -------------------------
+
+$z-index: (
+  bury:               -1,
+  content:            10,
+  header:             20,
+  navtrigger:         22,
+  modal:              40,
+);
