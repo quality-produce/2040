@@ -95,7 +95,6 @@ h5 {
   font-weight: $base-bold-weight;
   font-family: $header-font-family;
   line-height: $base-line-height;
-  margin-bottom: spacing(.5);
   letter-spacing: .5px;
 }
 
@@ -114,7 +113,7 @@ h2,
 h3,
 .h3 {
   @include typesize(1);
-  line-height: $leading;
+  line-height: 0;
 }
 
 h4,

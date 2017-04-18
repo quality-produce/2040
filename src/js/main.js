@@ -6,7 +6,7 @@ const dragButtonWrapper = document.querySelectorAll('.drag-button--wrapper')[0];
 let startX = 0;
 let distanceX = 0;
 let distanceXPercentage = 0;
-let currentDistanceX = 35;
+let currentDistanceX = 65;
 let touchStart = false;
 
 // get width of browser
