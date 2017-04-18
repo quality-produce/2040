@@ -11,9 +11,10 @@ let touchStart = false;
 
 // get width of browser
 const setWidth = () => {
-  const initialWidth = window.innerWidth ||
-    document.documentElement.clientWidth ||
-    document.body.clientWidth;
+  console.log(window.innerWidth, document.documentElement.clientWidth, document.body.clientWidth);
+  const initialWidth = document.documentElement.clientWidth ||
+    document.body.clientWidth ||
+    window.innerWidth;
   heroBadWrapper.style.width = `${initialWidth}px`;
 };
 
